@@ -28,12 +28,15 @@ jobs:
           node-version: '20'
 
       - name: Fetch market data
+        continue-on-error: true
         run: node czb-fetch-sources.mjs
 
       - name: Build morning report
+        continue-on-error: true
         run: node czb-morning-build.mjs
 
       - name: Build review report
+        continue-on-error: true
         run: node czb-review-build.mjs
 
       - name: Build dist
