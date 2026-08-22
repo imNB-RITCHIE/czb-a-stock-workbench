@@ -1,0 +1,56 @@
+name: 操作比名拽 - 每日晨报与复盘
+
+on:
+  # 北京时间 05:30 = UTC 21:30（前一天晚上）
+  # 周日~周四触发，覆盖周一~周五早盘
+  schedule:
+    - cron: '30 21 * * 0-4'
+  # 北京时间 15:30 = UTC 07:30
+  # 周一~周五触发，覆盖收盘复盘
+    - cron: '30 7 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch market data
+        run: node czb-fetch-sources.mjs
+
+      - name: Build morning report
+        run: node czb-morning-build.mjs
+
+      - name: Build review report
+        run: node czb-review-build.mjs
+
+      - name: Build dist
+        run: |
+          mkdir -p dist
+          cp daily-data.json dist/daily-data.json
+          cp czb-sources.json dist/czb-sources.json
+          cp "操作比名拽-A股工作台.html" dist/index.html
+
+      - name: Deploy to gh-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout --orphan gh-pages 2>/dev/null || git checkout gh-pages
+          git rm -rf . 2>/dev/null || true
+          cp -r dist/* .
+          rm -rf dist
+          git add .
+          git commit -m "Daily report $(date -Iseconds)" || true
+          git push origin gh-pages --force
