@@ -8,6 +8,9 @@ on:
   # 北京时间 15:30 = UTC 07:30
   # 周一~周五触发，覆盖收盘复盘
     - cron: '30 7 * * 1-5'
+  # 本地推送 main 分支时自动重新部署（改完代码一推就同步到云端）
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:

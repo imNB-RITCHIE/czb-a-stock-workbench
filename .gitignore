@@ -26,3 +26,16 @@ _*.html
 # but if you prefer not to commit them, uncomment below:
 # daily-data.json
 # czb-sources.json
+
+# Legacy / unrelated project files (keep repo clean)
+astock-workbench.html
+astock-workbench.bak.html
+astock_import_*.json
+build_daily_quotes.mjs
+build_daily_technicals.mjs
+fetch-astock.mjs
+
+# Temp dev scripts (underscore-prefixed)
+_*.py
+_*.js
+_*.mjs
