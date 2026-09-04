@@ -1,0 +1,259 @@
+{
+  "date": "2026-09-04",
+  "generatedAt": "2026-09-04T07:35:36.958Z",
+  "aShares": {
+    "sourceA": {
+      "name": "腾讯财经 qt.gtimg.cn",
+      "data": {
+        "sh000001": {
+          "name": "上证指数",
+          "price": 3930.12,
+          "prevClose": 3942.09,
+          "change": -0.3
+        },
+        "sz399001": {
+          "name": "深证成指",
+          "price": 13516.97,
+          "prevClose": 13625.12,
+          "change": -0.79
+        },
+        "sz399006": {
+          "name": "创业板指",
+          "price": 3286.55,
+          "prevClose": 3312.54,
+          "change": -0.78
+        },
+        "sh000688": {
+          "name": "科创50",
+          "price": 1577.36,
+          "prevClose": 1611.17,
+          "change": -2.1
+        },
+        "sh600362": {
+          "name": "江西铜业",
+          "price": 45.86,
+          "prevClose": 46.88,
+          "change": -2.18
+        },
+        "sz000636": {
+          "name": "风华高科",
+          "price": 48.41,
+          "prevClose": 50.62,
+          "change": -4.37
+        },
+        "sh603657": {
+          "name": "春光科技",
+          "price": 25.25,
+          "prevClose": 25.68,
+          "change": -1.67
+        },
+        "sh600879": {
+          "name": "航天电子",
+          "price": 14.38,
+          "prevClose": 14.39,
+          "change": -0.07
+        },
+        "sh600900": {
+          "name": "长江电力",
+          "price": 28.42,
+          "prevClose": 28.44,
+          "change": -0.07
+        },
+        "sz002249": {
+          "name": "大洋电机",
+          "price": 6.66,
+          "prevClose": 6.84,
+          "change": -2.63
+        },
+        "sz002338": {
+          "name": "奥普光电",
+          "price": 40.55,
+          "prevClose": 41.48,
+          "change": -2.24
+        },
+        "sh603027": {
+          "name": "千禾味业",
+          "price": 7.5,
+          "prevClose": 7.35,
+          "change": 2.04
+        },
+        "sh605056": {
+          "name": "咸亨国际",
+          "price": 13.68,
+          "prevClose": 13.88,
+          "change": -1.44
+        },
+        "sz301230": {
+          "name": "泓博医药",
+          "price": 29.61,
+          "prevClose": 29.89,
+          "change": -0.94
+        }
+      }
+    },
+    "sourceB": {
+      "name": "新浪财经 hq.sinajs.cn",
+      "data": {
+        "sh000001": {
+          "name": "上证指数",
+          "price": 3930.1164,
+          "prevClose": 3942.0879,
+          "change": -0.3
+        },
+        "sz399001": {
+          "name": "深证成指",
+          "price": 13516.969,
+          "prevClose": 13625.122,
+          "change": -0.79
+        },
+        "sz399006": {
+          "name": "创业板指",
+          "price": 3286.546,
+          "prevClose": 3312.541,
+          "change": -0.78
+        },
+        "sh000688": {
+          "name": "科创50",
+          "price": 1577.3606,
+          "prevClose": 1611.1652,
+          "change": -2.1
+        },
+        "sh600362": {
+          "name": "江西铜业",
+          "price": 45.86,
+          "prevClose": 46.88,
+          "change": -2.18
+        },
+        "sz000636": {
+          "name": "风华高科",
+          "price": 48.41,
+          "prevClose": 50.62,
+          "change": -4.37
+        },
+        "sh603657": {
+          "name": "春光科技",
+          "price": 25.25,
+          "prevClose": 25.68,
+          "change": -1.67
+        },
+        "sh600879": {
+          "name": "航天电子",
+          "price": 14.38,
+          "prevClose": 14.39,
+          "change": -0.07
+        },
+        "sh600900": {
+          "name": "长江电力",
+          "price": 28.42,
+          "prevClose": 28.44,
+          "change": -0.07
+        },
+        "sz002249": {
+          "name": "大洋电机",
+          "price": 6.66,
+          "prevClose": 6.84,
+          "change": -2.63
+        },
+        "sz002338": {
+          "name": "奥普光电",
+          "price": 40.55,
+          "prevClose": 41.48,
+          "change": -2.24
+        },
+        "sh603027": {
+          "name": "千禾味业",
+          "price": 7.5,
+          "prevClose": 7.35,
+          "change": 2.04
+        },
+        "sh605056": {
+          "name": "咸亨国际",
+          "price": 13.68,
+          "prevClose": 13.88,
+          "change": -1.44
+        },
+        "sz301230": {
+          "name": "泓博医药",
+          "price": 29.61,
+          "prevClose": 29.89,
+          "change": -0.94
+        }
+      }
+    },
+    "names": {
+      "sh000001": "沪指",
+      "sz399001": "深成指",
+      "sz399006": "创业板指",
+      "sh000688": "科创50",
+      "sh600362": "江西铜业",
+      "sz000636": "风华高科",
+      "sh603657": "春光科技",
+      "sh600879": "航天电子",
+      "sh600900": "长江电力",
+      "sz002249": "大洋电机",
+      "sz002338": "奥普光电",
+      "sh603027": "千禾味业",
+      "sh605056": "咸亨国际",
+      "sz301230": "泓博医药"
+    }
+  },
+  "global": {
+    "source": "腾讯全球 + Yahoo 大宗",
+    "data": {
+      "美股道琼斯": {
+        "price": 53686.11,
+        "prevClose": 53061.95,
+        "change": 1.18
+      },
+      "美股纳斯达克": {
+        "price": 26584.06,
+        "prevClose": 26217.83,
+        "change": 1.4
+      },
+      "港股恒生": {
+        "price": 25687.17,
+        "prevClose": 25213.31,
+        "change": 1.88
+      },
+      "港股恒生科技": {
+        "price": 4563.61,
+        "prevClose": 4468.48,
+        "change": 2.13
+      },
+      "美股标普500": {
+        "name": "标普500",
+        "price": 7747.71,
+        "change": 1.06
+      },
+      "日经225": {
+        "name": "日经225",
+        "price": 65020.94,
+        "change": 1.26
+      },
+      "韩国KOSPI": {
+        "name": "韩国KOSPI",
+        "price": 6687.21,
+        "change": 1.64
+      },
+      "黄金COMEX": {
+        "price": 4515.9,
+        "prevClose": 4431.1,
+        "change": 1.91
+      },
+      "铜COMEX": {
+        "price": 6.657,
+        "prevClose": 6.5935,
+        "change": 0.96
+      },
+      "原油WTI": {
+        "price": 91.58,
+        "prevClose": 85.76,
+        "change": 6.79
+      }
+    }
+  },
+  "crossValidation": {
+    "verified": true,
+    "issues": []
+  }
+}
